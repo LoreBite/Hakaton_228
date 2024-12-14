@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e5e6e7;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+.schedule {
+    justify-content: space-between;
+    font-family: "Roboto Slab";
+    border: none;
+}
+/* .schedule:hover  {
+    display: none;
+} */
+#button-container {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: auto;    
+}
+.buttons {
+    justify-content: space-between;
+    border-radius: 8px;
+    font-family: "Roboto Slab";
+}
+button {
+    margin-right: 0px;
+    padding: 10px 15px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#button_1 {
+    position: relative;
+    margin-right: 10px;
+    width: 180px;
+    text-align: left;
+    border: 0px;
+}
+.day {
+    position: relative;
+    margin-right: 10px;
+    width: 165px;
+    height: 50px;
+    text-align: left;
+    border: 0px;
+    transform: translate(-200px, 0px);
+}
+#button_2 {
+    position: relative;
+    margin-left: 630px;
+    border-radius: 16px 0px 0px 16px;
+
+}
+#button_3{
+    position: relative;
+
+}
+#button_3_5{
+    position: relative;
+    margin-right: 600px;
+    border-radius: 0px 16px 16px 0px;
+}
+#button_4{
+    position: relative;
+    display: flex;
+    border-radius: 25px 25px 25px 25px;
+    width: 140px;
+    text-align: left;
+    border: 0px;
+}
+/* .buttons:hover{
+    animation: ease, buttons_animation .75s forwards;
+}
+.buttons:not(:hover){
+    animation: ease, buttons_animation .75s backwards;
+    
+} */
+
+
+
+
+
+
+#your_schedule_h1 {
+    transform: translate(0, -230px);
+}
+#schedule-container {
+    display: flex;
+    width: 80%;
+    height: 100px;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: "Roboto Slab";
+    background-color: rgba(255, 192, 203, 0);
+    margin-bottom: 10px;
+    transform: translate(0, -230px);
+}
+
+#schedule_dayoftheweek {
+    background-color: white;
+    width: 15%;
+    height: 100px;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-align: top;
+}
+
+#schedule_lesson{
+    display: grid;
+    margin-left: 10px;
+    background-color: white;
+    width: 90%;
+    height: 100px;
+    border-radius: 8px;
+    text-align: center;
+}
+.lesson_text {
+    margin-top: 35px;
+    font-size: 20px;
+}
+#arrow {
+    transform: rotate(180deg);
+}
+#icon_profile {
+    display: block;
+    border: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(21, 255, 0);
+    margin-left: 10px;
+}
+#box_text {
+    margin-top: 20px;  
+
+    width: 75%;
+    height: 35%;
+    background-color: rgb(88, 255, 88);
+    border-radius: 8px;
+    text-align: center;
+}
+#time {
+    padding-top: 5px;
+}
+.numberth {
+    position:static;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.h1 {
+    position: relative;
+    font-size: 32px;
+    bottom: 90%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: "Roboto Slab";
+}
+
+.horizontal-gradient {
+    background: linear-gradient(to right, #8DFFCE, #5fff6a);
+    
+    margin: 10px 200px 0px 0px;
+    border-radius: 50%;
+}
+.radial-gradient_transparent {
+    background: radial-gradient(#5fff6a, #8DFFCE);
+    margin: 10px 200px 0px 0px;
+    border-radius: 50%;
+}
+#circle_1 {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    transform:translate(-170px,-400px);
+    z-index: -1;
+}
+#circle_2 {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    transform:translate(1500px,-400px);
+    z-index: -1;
+}
+#circle_3 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transform:translate(20px, -800px) rotate(90deg);
+    z-index: -1;
+
+}

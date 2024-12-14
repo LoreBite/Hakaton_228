@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Registration.css">
+    <title>Форма входа</title>
+    <style>
+        h2 {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="panel">
+    <img src="worry-free_schedule.png" id="logo"></img><span id="logo_text"><i>Актуальное расписание <br>для учеников и учителей</i></span>
+</div>
+<div id="school_logo_div">
+    <img src="logotext4.png" id="school_logo"></img>
+</div>
+<div class="form-container">
+    <h2 align="center">Профиль</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Логин" required>
+        <input type="password" id="password" placeholder="Нынешний пароль" required>
+        <input type="password" id="change_password" placeholder="Изменить пароль" required>
+        <input type="password" id="confirm_password" placeholder="Подтвердить изменение пароля" required>
+        <button type="submit" id="submit">Сохранить изменения</button>
+    </form>
+    <div class="message" id="message"></div>
+</div>
+<div class="horizontal-gradient" id="circle_3"></div>
+<div class="horizontal-gradient" id="circle_1"></div>
+<div class="radial-gradient_transparent" id="circle_2"></div>
+<!-- <div>
+    <p>Еще не зарегистрированы? <a href="Registration.html">Зарегистрируйтесь</a></p>
+    <p>Забыли пароль? <a href="#">Восстановить</a></p>
+
+</div> -->
+
+<script>
+    // Пример данных пользователей (в реальном приложении используйте базу данных)
+    const users = [
+        { email: 'markolya2008@gmail.com', password: '123' },
+        { email: 'test@example.com', password: 'test123' }
+    ];
+
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Предотвращаем отправку формы
+
+        // Получаем значения полей
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const change_password = document.getElementById('change_password').value;
+        const confirm_password = document.getElementById('confirm_password').value;
+
+        // Проверяем, есть ли пользователь с таким email и паролем
+        const user = users.find(user => user.email === email && user.password === password);
+
+        if (user) {
+            if (change_password === confirm_password) {
+            document.getElementById('message').innerText = 'Изменения успешны';
+            document.getElementById('message').style.color = 'green';
+
+            // Перенаправление на другую страницу (например, dashboard.html)
+            setTimeout(function() {
+                window.location.href = 'Hakaton.html'; // Укажите нужный URL
+            }, 1000);
+            } else {
+                document.getElementById('message').innerText = 'Пароли не совпадают.';
+                document.getElementById('message').style.color ='red';
+            }
+        } else {
+            document.getElementById('message').innerText = 'Неверный email или пароль.';
+            document.getElementById('message').style.color = 'red';
+        }
+    });
+</script>
+
+</body>
+</html>

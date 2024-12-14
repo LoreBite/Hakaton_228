@@ -1,0 +1,18 @@
+@keyframes buttons_animation{
+    0% {
+        
+    }
+    100% {
+        background-color: rgb(122, 122, 122);
+        font-size: 26px;
+    }
+}
+
+@keyframes schedule_anim{
+    0% {
+
+    }
+    100% {
+        background-color: greenyellow;
+    }
+}
